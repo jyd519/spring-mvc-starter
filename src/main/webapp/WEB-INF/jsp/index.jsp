@@ -1,15 +1,11 @@
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@taglib uri="http://www.springframework.org/tags" prefix="spring"%>
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-"http://www.w3.org/TR/html4/loose.dtd">
-
-<html>
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<%@include file="/WEB-INF/fragements/top.jsp"%>
+<ata:head>
   <title>Welcome to Spring Web MVC project</title>
-</head>
+</ata:head>
 
-<body bgcolor="#DDDDDD">
+<body>
+
+<div class="container">
 
 <h3>htmlEscape is false </h3>
 <h3>escapeBody is false </h3>
@@ -63,6 +59,10 @@
   <h5>  less than < </h5>
   <h5>  greater than > </h5>
 </spring:escapeBody>
+</div>
+
+<%@include file="/WEB-INF/fragements/footer.jsp"%>
+
 </body>
 </html>
 
